@@ -3,7 +3,12 @@ package com.epam.loops;
 public class HalfPyramid {
 
     public void printHalfPyramid(int cathetusLength) {
-
+        for (int i = 0; i < cathetusLength; i++) {
+            for (int j = 0; j < cathetusLength; j++) {
+                System.out.print(cathetusLength - j - 1 > i ? " " : "*");
+            }
+            System.out.println();
+        }
     }
 
     public static void main(String[] args) {
